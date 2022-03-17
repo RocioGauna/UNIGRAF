@@ -1,0 +1,19 @@
+.navbar{
+    background-color: #f3f3f3;
+    .container-fluid{
+        display: flex;
+        .navbar-collapse{
+            flex-direction: row-reverse;
+            .navbar-nav{
+                .nav-item{
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                   .nav-link{
+                       color: rgb(48, 48, 48);
+                   }
+                }
+            }
+        }
+    }
+}
