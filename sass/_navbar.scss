@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #f3f3f3;
+    background-color: #000000;
     .container-fluid{
         display: flex;
         .navbar-collapse{
@@ -10,7 +10,7 @@
                     font-weight: 600;
                     text-transform: uppercase;
                    .nav-link{
-                       color: rgb(48, 48, 48);
+                        color: white;
                    }
                 }
             }

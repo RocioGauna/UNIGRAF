@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #f3f3f3;
+  background-color: #000000;
 }
 
 .navbar .container-fluid {
@@ -22,14 +22,14 @@
 }
 
 .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
-  color: #303030;
+  color: white;
 }
 
 .quienes-somos {
   padding: 50px;
   text-align: center;
-  background-color: #f3f3f3;
-  color: #303030;
+  background-color: #000000;
+  color: white;
 }
 
 .quienes-somos .quienes-somos-h1 {
@@ -164,6 +164,6 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 /*# sourceMappingURL=sass.css.map */
