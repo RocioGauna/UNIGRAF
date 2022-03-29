@@ -108,6 +108,7 @@
 .mb-3 {
   background-color: #94b634;
   padding: 10px 40px 10px 40px;
+  margin-bottom: 0;
 }
 
 .mb-3 .datos {
@@ -163,7 +164,71 @@
   font-size: 1.5rem;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.footer .footer-logo img {
+  width: 120px;
+}
+
+.footer .footer-social {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-decoration: none;
+  padding-left: 2rem;
+}
+
+.footer .footer-social a p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.footer .footer-social a i {
+  color: #94b634;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=sass.css.map */

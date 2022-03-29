@@ -1,0 +1,32 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    .footer-logo{
+        img{
+             width: 120px;
+        }
+    }
+    .footer-social{
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            padding-left: 2rem;
+            p{
+                margin: 0;
+                padding-left: 10px;
+            }
+            i{
+                color: #94b634;
+            }
+        }
+    }
+}
