@@ -105,24 +105,23 @@
   }
 }
 
-.mb-3 {
+.form-input {
   background-color: #94b634;
   padding: 10px 40px 10px 40px;
-  margin-bottom: 0;
 }
 
-.mb-3 .datos {
+.form-input .datos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.mb-3 .datos input {
+.form-input .datos input {
   height: 50px;
   margin-bottom: 25px;
 }
 
-.mb-3 .button-s {
+.form-input .button-s {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +131,7 @@
   padding-bottom: 20px;
 }
 
-.mb-3 .button-s .submit {
+.form-input .button-s .submit {
   margin-top: 10px;
   border: none;
   border-radius: 5px;
@@ -143,24 +142,24 @@
   width: 200px;
 }
 
-.mb-3 .button-s .submit:hover {
+.form-input .button-s .submit:hover {
   background-color: black;
   color: white;
 }
 
-.mb-3 .form-text {
+.form-input .form-text {
   text-align: center;
   padding: 15px;
   color: black;
 }
 
-.mb-3 .form-text h2 {
+.form-input .form-text h2 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 2.5rem;
 }
 
-.mb-3 .form-text p {
+.form-input .form-text p {
   font-size: 1.5rem;
 }
 
@@ -215,20 +214,66 @@
   color: #94b634;
 }
 
+@media (max-width: 472px) and (min-width: 300px) {
+  .footer .footer-social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer .footer-social a {
+    padding-bottom: 10px;
+  }
+  .footer .footer-social a p {
+    font-size: 13px;
+    margin-left: 5px;
+  }
+  .footer .footer-social a i {
+    width: 20px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 767px) {
+  .footer .footer-social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer .footer-social a {
+    padding-bottom: 10px;
+  }
+  .footer .footer-social a p {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .footer .footer-social a i {
+    width: 20px;
+  }
+}
+
 * {
   margin: 0%;
   padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
-ul li {
+body ul li {
   list-style: none;
 }
 
-ul li a {
+body ul li a {
   text-decoration: none;
 }
 /*# sourceMappingURL=sass.css.map */
