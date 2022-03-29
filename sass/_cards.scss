@@ -1,0 +1,9 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card{
+        align-items: center;
+        margin: 2rem;
+    }
+}
