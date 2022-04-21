@@ -276,6 +276,21 @@
   }
 }
 
+.servicios-text {
+  text-align: center;
+  padding: 20px 20px 0 20px;
+}
+
+.servicios-text h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.servicios-text p {
+  font-size: 1.5rem;
+}
+
 .cards-t {
   display: -webkit-box;
   display: -ms-flexbox;
