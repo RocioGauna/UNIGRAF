@@ -1,7 +1,8 @@
 .servicios{
+    background-color: #f0f9d7;
     .servicios-text{
         text-align: center;
-        padding: 40px;
+        padding: 20px 20px 0 20px;
         h2{
             font-weight: bold;
             text-transform: uppercase;
@@ -13,43 +14,43 @@
     }
 
     .lista-servicios{
-        display: flex;
-        justify-content: center;
-        flex-wrap: initial;
-        list-style: none;
-        margin-bottom: 3rem;
+        padding-bottom: 30px;
 
-        .titulo-s{
-            margin-bottom: 10px;
-            font-weight: bold;
+        .lista-c{
             display: flex;
-            
-            .lista{
-                list-style: none;
-                li{
-                    font-weight: normal;
+            align-items: center;
+            flex-direction: column;
+            .titulo-s{
+                margin-bottom: 10px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 10px;
+                .cero{
+                    .lista{
+                        list-style: none;
+                        text-align: center;
+                        li{
+                            text-align: center;
+                            font-weight: normal;
+                        }
+                    }
                 }
-            }
-            .lista-2{
-                list-style: none;
-                font-weight: normal;
+                .uno{
+                    .lista-2{
+                        text-align: center;
+                        list-style: none;
+                        font-weight: normal;
+                          
+                        li{
+                            text-align: center;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-.servicios-text{
-    text-align: center;
-    padding-top: 20px;
-    h2{
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 2.5rem;
-    }
-    p{
-        font-size: 1rem;
-    }
-}
 
 @media (max-width: 472px) and (min-width: 300px){
     .servicios{

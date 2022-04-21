@@ -21,6 +21,10 @@
   text-transform: uppercase;
 }
 
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu li {
+  text-align: left;
+}
+
 .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: white;
 }
@@ -37,9 +41,13 @@
   text-transform: uppercase;
 }
 
+.servicios {
+  background-color: #f0f9d7;
+}
+
 .servicios .servicios-text {
   text-align: center;
-  padding: 40px;
+  padding: 20px 20px 0 20px;
 }
 
 .servicios .servicios-text h2 {
@@ -53,52 +61,47 @@
 }
 
 .servicios .lista-servicios {
+  padding-bottom: 30px;
+}
+
+.servicios .lista-servicios .lista-c {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: initial;
-      flex-wrap: initial;
-  list-style: none;
-  margin-bottom: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.servicios .lista-servicios .titulo-s {
+.servicios .lista-servicios .lista-c .titulo-s {
   margin-bottom: 10px;
   font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.servicios .lista-servicios .titulo-s .lista {
-  list-style: none;
-}
-
-.servicios .lista-servicios .titulo-s .lista li {
-  font-weight: normal;
-}
-
-.servicios .lista-servicios .titulo-s .lista-2 {
-  list-style: none;
-  font-weight: normal;
-}
-
-.servicios-text {
   text-align: center;
-  padding-top: 20px;
+  margin-top: 10px;
 }
 
-.servicios-text h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 2.5rem;
+.servicios .lista-servicios .lista-c .titulo-s .cero .lista {
+  list-style: none;
+  text-align: center;
 }
 
-.servicios-text p {
-  font-size: 1rem;
+.servicios .lista-servicios .lista-c .titulo-s .cero .lista li {
+  text-align: center;
+  font-weight: normal;
+}
+
+.servicios .lista-servicios .lista-c .titulo-s .uno .lista-2 {
+  text-align: center;
+  list-style: none;
+  font-weight: normal;
+}
+
+.servicios .lista-servicios .lista-c .titulo-s .uno .lista-2 li {
+  text-align: center;
 }
 
 @media (max-width: 472px) and (min-width: 300px) {
@@ -318,116 +321,6 @@
   height: 100%;
 }
 
-html,
-body {
-  height: 100%;
-}
-
-.center {
-  background-color: #0a2640;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  grid-gap: 1em;
-  overflow: hidden;
-  width: 55em;
-}
-
-.wrapper > .inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  grid-gap: 1em;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.card {
-  border-radius: 0.5em;
-  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-}
-
-.card > img {
-  border-top-right-radius: inherit;
-  border-top-left-radius: inherit;
-  display: block;
-  width: 17.5em;
-}
-
-.card > .content {
-  background: #0a2640;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  padding: 1em;
-  text-align: center;
-}
-
-.card > .content > h1,
-.card > .content > h3 {
-  margin: 0.35em 0;
-}
-
-.card > .content > h1 {
-  color: #fff;
-  font-size: 1.25rem;
-  line-height: 1;
-}
-
-.card > .content > h3 {
-  color: #ccc;
-  font-size: 0.9rem;
-  font-weight: 300;
-}
-
-.map {
-  margin-top: 1em;
-}
-
-.map > button {
-  all: unset;
-  background: #11406c;
-  cursor: pointer;
-  margin: 0 0.125em;
-  position: relative;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  border-radius: 100%;
-  height: 1em;
-  width: 1em;
-}
-
-.map > button.active:after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 50%;
-  border-radius: 100%;
-  height: 0.5em;
-  width: 0.5em;
-}
-
 * {
   margin: 0%;
   padding: 0%;
@@ -439,8 +332,19 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body dl, body ol, body ul {
+  margin: 0;
+  padding: 0;
+}
+
+body dl li, body ol li, body ul li {
+  margin: 0;
+  padding: 0;
+}
+
 body ul li {
   list-style: none;
+  text-align: center;
 }
 
 body ul li a {
